@@ -10,10 +10,10 @@
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0",
-    "@prismicio/client": "^7.21.2"
+    "@prismicio/client": "^7.21.2",
+    "imgix-url-builder": "^0.0.6"
   },
   "dependencies": {
-    "imgix-url-builder": "^0.0.6",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
