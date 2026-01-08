@@ -8,6 +8,10 @@ import {
   LinkResolverFunction, FilledLinkToWebField, FilledLinkToMediaField, FilledContentRelationshipField,
 } from "@prismicio/client";
 
+type AsLinkConfig<LinkResolverFunctionReturnType = string | null | undefined> = {
+  linkResolver?: LinkResolverFunction<LinkResolverFunctionReturnType> | null
+}
+
 export type AsLinkReturnType<
   LinkResolverFunctionReturnType = string | null | undefined,
   Field extends LinkField | PrismicDocument | null | undefined =
@@ -15,8 +19,7 @@ export type AsLinkReturnType<
     | PrismicDocument
     | null
     | undefined,
-> = Field extends
-  | FilledLinkToWebField
+> = Field extends | FilledLinkToWebField
   | FilledLinkToMediaField
   | FilledContentRelationshipField
   | PrismicDocument
@@ -30,8 +33,8 @@ export type AsLinkReturnType<
 export class AsLinkPipe implements PipeTransform {
   transform(
     linkFieldOrDocument: LinkField | LinkToMediaField | ContentRelationshipField | PrismicDocument,
-    config?: LinkResolverFunction<string | null>,
-  ): string | null {
+    config?: AsLinkConfig,
+  ): string | null | undefined {
     return asLink(linkFieldOrDocument, config);
   }
 }
