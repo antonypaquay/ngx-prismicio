@@ -1,12 +1,23 @@
 {
-  "name": "ngx-prismicio",
-  "version": "0.0.1",
+  "name": "@wzrdev/ngx-prismicio",
+  "description": "Angular components and utilities to fetch and present Prismic content",
+  "version": "0.0.2",
+  "keywords": [
+    "typescript",
+    "prismic",
+    "angular"
+  ],
   "peerDependencies": {
     "@angular/common": "^19.2.0",
-    "@angular/core": "^19.2.0"
+    "@angular/core": "^19.2.0",
+    "@prismicio/client": "^7.21.2"
   },
   "dependencies": {
+    "imgix-url-builder": "^0.0.6",
     "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@prismicio/client": "^7.21.2"
   },
   "sideEffects": false
 }
