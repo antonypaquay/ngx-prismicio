@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:library": "ng run ngx-prismicio:build",
+    "install-locally": "ng run ngx-prismicio:build && npm i ./dist/ngx-prismicio",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -19,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
     "@prismicio/client": "^7.21.2",
+    "@wzrdev/ngx-prismicio": "file:dist/ngx-prismicio",
     "imgix-url-builder": "^0.0.6",
     "ngx-prismicio": "file:dist/ngx-prismicio",
     "rxjs": "~7.8.0",
