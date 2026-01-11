@@ -78,6 +78,15 @@
           "builder": "@ngx-env/builder:extract-i18n",
           "options": {}
         },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/docs/src/**/*.ts",
+              "projects/docs/src/**/*.html"
+            ]
+          }
+        },
         "test": {
           "builder": "@ngx-env/builder:karma",
           "options": {
@@ -121,6 +130,15 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-prismicio/src/**/*.ts",
+              "projects/ngx-prismicio/src/**/*.html"
+            ]
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",

@@ -29,7 +29,13 @@ jobs:
         run: npm ci
 
       - name: Lint application
-        run: npm run lint
+        run: npm run lint:docs
 
       - name: Build application
         run: npm run build
+
+      - name: Lint library
+        run: npm run lint:ngx-prismicio
+
+      - name: Build library
+        run: npm run build:library
