@@ -1,0 +1,38 @@
+name: CI - Build & Check
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  develop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          filter: tree:0
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint all files
+        run: npm run lint:docs
+
+      - name: Build application
+        run: npm run build
+
+      - name: Build library
+        run: npm run build:library

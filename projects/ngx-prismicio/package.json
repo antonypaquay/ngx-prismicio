@@ -1,7 +1,7 @@
 {
   "name": "@wzrdev/ngx-prismicio",
   "description": "Angular components and utilities to fetch and present Prismic content",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": [
     "typescript",
     "prismic",
