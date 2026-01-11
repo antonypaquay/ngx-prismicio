@@ -1,6 +1,6 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { providePrismic } from '@wzrdev/ngx-prismicio';
+import { providePrismic } from '../../../ngx-prismicio/src/lib/providers/provide-prismic';
 
 import { routes } from './app.routes';
 import { environment } from '../environments/environment';

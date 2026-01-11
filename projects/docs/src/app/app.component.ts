@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PrismicService } from '@wzrdev/ngx-prismicio';
+import { PrismicService } from '../../../ngx-prismicio/src/lib/services/prismic.service';
 
 @Component({
   selector: 'app-root',
