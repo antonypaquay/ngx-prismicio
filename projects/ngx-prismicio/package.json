@@ -2,11 +2,17 @@
   "name": "@wzrdev/ngx-prismicio",
   "description": "Angular components and utilities to fetch and present Prismic content",
   "version": "1.1.0",
+  "license": "MIT",
   "keywords": [
     "typescript",
     "prismic",
     "angular"
   ],
+  "author": "Antony Paquay",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonypaquay/ngx-prismicio"
+  },
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0",
