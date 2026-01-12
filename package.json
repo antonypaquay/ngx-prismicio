@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "lint:docs": "ng lint --project docs",
     "lint:library": "ng lint --project ngx-prismicio",
-    "release:dry-up": "npx semantic-release --dry-run"
+    "release:dry-run": "npx semantic-release --dry-run"
   },
   "private": true,
   "dependencies": {
